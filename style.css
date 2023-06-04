@@ -571,6 +571,7 @@ form .btn2:active {
 }
 
 .copyright {
+    color: #fff;
     width : 100%;
     text-align: center;
     padding: 25px 0;
@@ -609,6 +610,7 @@ form .btn2:active {
         font-size: 25px;
         z-index: 2;
         cursor: pointer;
+        margin-right: 10px;
     }
 
     nav .fa-solid{
@@ -624,9 +626,10 @@ form .btn2:active {
         top: 0;
         right : -200px;
         width: 180px;
-        height: 100vh;
+        /* height: 100vh; */
         padding-top : 50px;
         transition: right .3s;
+        max-height: fit-content;
     }
 
     nav ul li {
@@ -698,6 +701,13 @@ form .btn2:active {
 
     .about-col-2 {
         font-size: 14px;
+    }
+
+    .services-list div i{
+        display: none;
+    }
+    .services-list div h2 {
+        font-size: 25px;
     }
 
     .tab-links{
