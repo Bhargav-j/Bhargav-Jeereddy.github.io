@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>House Details</title>
+</head>
+<body>
+    <nav id="navbar" class="navbar-white">
+        <a href="index.html"><img src="images/logo-red.png" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html" >Popular Places</a></li>
+            <li><a href="House_details.html" class="active">Travel Outside</a></li>
+            <li><a href="listing.html">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <i class="fa-solid fa-bars" onclick="toggle()"></i>
+    </nav>
+
+    <div class="house-details">
+
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: San Francisco, California, United States</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/house-1.png"></div>
+            <div><img src="images/house-2.png"></div>
+            <div><img src="images/house-3.png"></div>
+            <div><img src="images/house-4.png"></div>
+            <div><img src="images/house-5.png"></div>
+        </div>
+
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>2 guest &nbsp; &nbsp; 2 beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>$ 100 / day</h4>
+        </div>
+
+        <hr class="line">
+
+        <form class="check-form">
+            <div>
+                <label>Check-In</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div>
+                <label>Check-Out</label>
+                <input type="text" placeholder="Add date">
+            </div>
+            <div class="guset-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <!-- See how the list is used to create a group of icon content in html and css -->
+        <ul class="details-list">
+            <li><i class="fas fa-home"></i>Entire House 
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class="fas fa-paint-brush"></i>Enhance Clean 
+                <span>This host has commited to Staybnb's cleaning process.</span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>Great Location 
+                <span>90% of recent guests gave this location a 5 star rating.</span>
+            </li>
+            <li><i class="fas fa-heart"></i>Great Check-in Experience 
+                <span>100% of recent guests gave the check-in process a 5 start rating.</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="home-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem inventore facilis laboriosam sint! Repellat quibusdam, facere molestiae ipsam, delectus modi deserunt voluptates asperiores magni necessitatibus iusto libero reprehenderit id. Alias excepturi possimus ea voluptatibus eligendi vitae, nulla ab obcaecati voluptatum at numquam expedita sint similique eveniet fugit delectus? Voluptatum provident nemo obcaecati ducimus deleniti esse, optio odit sunt incidunt ad, tenetur veritatis commodi fugit assumenda doloribus doloremque saepe magnam ipsum!</p>
+
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d136916.22447872462!2d-74.00273811517665!3d40.72533318590091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1685519630297!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>New York, United States</b>
+            <p>It's like a home away from home</p>
+        </div>
+
+        <hr class="line">
+
+
+        <!-- Have a look here also -->
+        <div class="host">
+            <img src="images/host.png">
+            <div>
+                <h2>Hosted by Brandon</h2>
+                <p><span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </span>&nbsp; &nbsp; 245 Reviews &nbsp; &nbsp; response rate 100% &nbsp; &nbsp; Response time : 60 min</p>
+            </div>
+        </div>
+
+        <a href="#" class="contact-host">Contact Host</a>
+
+    </div>
+
+    <footer>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <hr>
+        <p>Copyright &#169; 2023, Airbnb - clone</p>
+    </footer>
+
+    <script>
+        const navBar = document.getElementById('navbar');
+        function toggle(){
+            navBar.classList.toggle("hidemenu")
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+                const active = document.querySelector(".active");
+                active.classList.add('show');
+            })
+    </script>
+</body>
+</html>
