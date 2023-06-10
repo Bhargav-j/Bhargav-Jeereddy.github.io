@@ -90,16 +90,8 @@ window.addEventListener("scroll", () => {
     SegmentE1.forEach( container => {
         if (window.scrollY >= container.offsetTop - container.clientHeight/3) {
             currentSection = container.id;
-            // console.log(currentSection)
+            // console.log(currentSection);
         }
-
-        // const rectoffset = container.getBoundingClientRect()
-        // if (rectoffset.top < window.innerHeight && rectoffset.bottom >= 0){
-        //     container.classList.add("appear");
-        //     // console.log(container.id, "added APPEAR")
-        // } else {
-        //     container.classList.remove("appear");
-        // }
     });
 
     navLinksE1.forEach(navlink => {
@@ -129,7 +121,7 @@ function changeTheme(){
         document.documentElement.style.setProperty('--about-font', '#ababab');
         document.documentElement.style.setProperty('--services-bg', '#262626');
     }
-}
+};
 
 
 ////////////////////  Show More button on porfolio //////////////////
@@ -144,8 +136,40 @@ showMore.addEventListener('click', () => {
     } else if (showMore.innerHTML === "See Less"){
         showMore.innerHTML = "See More";
     }
-})
+});
 
 
 //////////////// Sroll Animation //////////////////
 
+const aboutCol1 = document.querySelector(".about-col-1");
+const aboutCol2 = document.querySelector(".about-col-2");
+const Sevicesgrid = document.querySelectorAll(".services-container");
+const Work = document.querySelectorAll(".visible");
+const contact = document.getElementById("contact");
+
+scrollEffectArray = [aboutCol1, aboutCol2,...Sevicesgrid ,...Work, showMore, contact];
+
+window.addEventListener("scroll", () => {
+    scrollEffectArray.forEach(ele => {
+        const rectoffset = ele.getBoundingClientRect();
+        if (rectoffset.top < window.innerHeight && rectoffset.bottom >= 0){
+                ele.classList.add("appear");
+                // console.log(ele.classList, "added APPEAR")
+            } else {
+                ele.classList.remove("appear");
+            }
+    });
+});
+
+// scrollEffectArray.forEach(ele => {
+//     // console.log(ele);
+//     window.addEventListener("scroll", () => {
+//         const rectoffset = ele.getBoundingClientRect();
+//         if (rectoffset.top < window.innerHeight && rectoffset.bottom >= 0){
+//                 ele.classList.add("appear");
+//                 // console.log(ele.classList, "added APPEAR")
+//             } else {
+//                 ele.classList.remove("appear");
+//             }
+//     });
+// });
