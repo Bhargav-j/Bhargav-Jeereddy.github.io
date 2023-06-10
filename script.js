@@ -9,7 +9,7 @@ var tabLinks_array = Array.from(tabLinks);
 var tabContents = document.querySelectorAll(".tab-contents");
 
 function opentab(tabname){
-    console.log(tabLinks);
+    // console.log(tabLinks);
 
     // Loop function on the tabLinks extracted using ClassName
     // for (ele of tabLinks){
@@ -79,7 +79,7 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 .catch(error => console.error('Error!', error.message))
 })
 
-////////////////////////  Make Link Item Active when Scrolling past Section /////////////////////////
+////////////////////////  Make Link Item Active when Scrolling pass Section /////////////////////////
 
 const navLinksE1 = document.querySelectorAll(".nav-link");
 const SegmentE1 = document.querySelectorAll(".segment");
@@ -92,6 +92,14 @@ window.addEventListener("scroll", () => {
             currentSection = container.id;
             // console.log(currentSection)
         }
+
+        // const rectoffset = container.getBoundingClientRect()
+        // if (rectoffset.top < window.innerHeight && rectoffset.bottom >= 0){
+        //     container.classList.add("appear");
+        //     // console.log(container.id, "added APPEAR")
+        // } else {
+        //     container.classList.remove("appear");
+        // }
     });
 
     navLinksE1.forEach(navlink => {
@@ -137,3 +145,7 @@ showMore.addEventListener('click', () => {
         showMore.innerHTML = "See More";
     }
 })
+
+
+//////////////// Sroll Animation //////////////////
+

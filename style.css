@@ -24,6 +24,8 @@ html{
 body {
     background-color: var(--bg);
     color : var(--fc);
+    overflow-x: hidden;
+    min-width: 300px;
 }
 
 #header {
@@ -38,6 +40,25 @@ body {
 .container {
     padding : 10px 10%;
 }
+
+/* .segment {
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+}
+
+.segment:nth-child(even){
+    transform: translateX(-100%);
+}
+
+.segment:nth-child(odd){
+    transform: translateX(100%);
+}
+
+.segment.appear {
+    opacity: 1;
+    transform: translateX(0);
+} */
+
 
 nav {
     display: flex;
@@ -587,14 +608,14 @@ form .btn2:active {
 
 /* ---------------- media queries --------------- */
 
-@media only screen and (max-width : 600px){
+@media (max-width : 800px){
     #header {
         background-image: url('images/phone-background.png');
     }
 
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 35%;
+        font-size: 1.15rem;
     }
 
     .header-text h1{
@@ -654,10 +675,6 @@ form .btn2:active {
         cursor: pointer;
     }
 
-    .header-text{
-        margin-top: 70%;
-    }
-
     .header-text h1{
         font-size: 25px;
     }
@@ -685,6 +702,10 @@ form .btn2:active {
 
     .sub-title {
         font-size: 40px;
+    }
+
+    #about {
+        padding-top: 10px;
     }
 
     .about-col-1, .about-col-2{
