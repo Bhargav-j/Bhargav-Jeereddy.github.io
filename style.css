@@ -30,7 +30,7 @@ body {
 
 #header {
     width : 100%;
-    height : 100vh;
+    max-height : 100vh;
     background-color: var(--bg);
     /* background-image: url('images/background.png');
     background-size: cover;
@@ -263,6 +263,7 @@ nav .fas {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .about-col-1 {
@@ -272,9 +273,10 @@ nav .fas {
 .about-col-1 img {
     width : 100%;
     border-radius: 15px;
-    margin-top: 20px;
-    height: 85vh;
+    margin-top: 50px;
+    max-height: 85vh;
     object-fit: cover;
+    object-position: center;
 }
 
 .about-col-2 {
@@ -641,19 +643,7 @@ form .btn2:active {
 
 /* ---------------- media queries --------------- */
 
-@media (max-width : 800px){
-    #header {
-        background-image: url('images/phone-background.png');
-    }
-
-    .header-text {
-        margin-top: 35%;
-        font-size: 1.15rem;
-    }
-
-    .header-text h1{
-        font-size: 30px;
-    }
+@media (max-width : 900px){
 
     nav {
         z-index: 1;
@@ -708,6 +698,17 @@ form .btn2:active {
         cursor: pointer;
     }
 
+    /* #header {
+        height: max-content;
+        max-height: 100vh;
+        background-image: url('images/phone-background.png');
+    } */
+
+    .header-text {
+        margin-top: 25%;
+        font-size: 1.15rem;
+    }
+
     .header-text h1{
         font-size: 25px;
     }
@@ -717,8 +718,20 @@ form .btn2:active {
     }
 
     .contact-top {
-        margin-top: 15%;
+        margin-top: 50px;
     }
+
+@media (max-width: 500px){
+
+    .header-text {
+        margin-top: 75%;
+        font-size: 1.15rem;
+    }
+
+    .contact-top {
+        margin-top: 25%;
+    }
+}
 
     .contact-top p{
         font-size: 14px;
@@ -738,7 +751,7 @@ form .btn2:active {
     }
 
     #about {
-        padding-top: 10px;
+        padding-top: 20px;
     }
 
     .about-col-1, .about-col-2{
@@ -750,8 +763,12 @@ form .btn2:active {
     }
 
     .about-col-1 img {
-        height: 70vh;
+        height : 50vh;
     }
+
+    /* .about-col-1 img {
+        height: 70vh;
+    } */
 
     .about-col-2 {
         font-size: 14px;
