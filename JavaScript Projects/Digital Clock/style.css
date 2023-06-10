@@ -1,0 +1,55 @@
+body{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: flex;
+    height : 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+  }
+
+.tiles{
+    display : flex;
+}
+
+.tiles div {
+    margin : 5px;
+    position : relative;
+    /* This is required to make ampm absolute*/
+}
+
+.tiles span {
+    width : 100px;
+    height : 80px;
+    background: slateblue;
+    opacity: 0.8;
+    color: white;
+    display: flex;      
+    /*it will make the span items flex to attain given width and height */
+    justify-content: center;
+    align-items: center;
+}
+
+.tiles .text {
+    height : 30px;
+    background-color: red;
+}
+
+.tiles .ampm {
+    position: absolute;
+    bottom : 0;
+    height : 30px;
+}
+
+

@@ -642,9 +642,7 @@ form .btn2:active {
 
 
 /* ---------------- media queries --------------- */
-
 @media (max-width : 900px){
-
     nav {
         z-index: 1;
     }
@@ -697,7 +695,6 @@ form .btn2:active {
         left : 25px;
         cursor: pointer;
     }
-
     /* #header {
         height: max-content;
         max-height: 100vh;
@@ -708,7 +705,6 @@ form .btn2:active {
         margin-top: 25%;
         font-size: 1.15rem;
     }
-
     .header-text h1{
         font-size: 25px;
     }
