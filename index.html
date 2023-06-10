@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal portfolio</title>
+</head>
+<body>
+    <div id="header" class = "segment">
+        <div class="container">
+            <nav>
+                <div>
+                    <h1 class="first-letter">B</h1>
+                    <h1 class="name-letter">HARGAV</h1>
+                </div>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a class = "nav-link active-navbar" href="#header">Home</a></li>
+                    <li><a class = "nav-link" href="#about">About</a></li>
+                    <li><a class = "nav-link" href="#services">Services</a></li>
+                    <li><a class = "nav-link" href="#portfolio">Portfolio</a></li>
+                    <li><a class = "nav-link" href="#contact">Contact</a></li>
+                    <!-- <i class ="fas fa-times" onclick="closemenu()"></i> -->
+                </ul>
+                <i class="fa-solid fa-moon" onclick="changeTheme()"></i>
+                <i class ="fas fa-bars" id="sidemenu-toggle" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I'm <span>Bhargav Jeereddy</span><br>From Hyderabad, India</h1>
+                <div class="contact-top">
+                    <p><i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://twitter.com/Bhargav_theBoss" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Bhargav-j" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Jeereddy_Bhargav_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class = "segment">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-img.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>An adaptable and driven individual, 
+                        I am passionate about Web development and possess expertise in HTML, CSS, JavaScript, Python, and MySQL.
+                        With a hunger for knowledge and an eagerness to embrace new technologies, I can thrive in dynamic and innovative environments. 
+                        My ability to quickly learn and apply new concepts allows me to stay at the forefront of emerging trends in web development. 
+                        I am dedicated to creating visually appealing and user-friendly websites,with a focus on responsive design while leveraging my skills in Python and MySQL to develop dynamic web applications. 
+                        I am committed to continuously expanding my skill set to make a meaningful impact in the ever-evolving field of web development.</p>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quas possimus ea excepturi saepe quidem dignissimos vitae. Cupiditate ipsa perferendis est, praesentium inventore unde voluptatibus alias deleniti beatae, temporibus omnis doloribus sunt maxime, delectus reprehenderit ratione enim minima ipsam? Sequi itaque earum eaque non pariatur ipsa, praesentium ut iste, dolore perferendis cumque, similique voluptatibus quas?</p> -->
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('achievements')"><i class="fa-solid fa-medal"></i> Achievements</p>
+                        <p class="tab-links" onclick="opentab('skills')"><i class="fa-solid fa-lightbulb"></i> Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-book"></i>Experience & Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="achievements">
+                        <ul>
+                            <li><span>Productivity</span><br>Boosted productivity by 20% through automating daily creation of comprehensive Excel summaries for surveyed data which include various parameters. - TSWB project</li>
+                            <li><span>Optimization</span><br>Streamlined data collection and manipulation by seamlessly integrating Python with MySQL API, including creating a robust RDBMS. - TSWB project</li>
+                            <li><span>Development</span><br>Developed a robust GUI with image compression and file manipulation capabilities, resulting in a 50% reduction in data verification and uploading load. - TSWB project</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Web Developmet</span><br>Building modern, responsive websites - HTML / CSS / JS</li>
+                            <li><span>Data Analysis</span><br>Relational Database design and management - Pandas / MySQL</li>
+                            <li><span>GUI Development</span><br>Creating interactive and user-friendly desktop applications. - Python / Tkinter</li>
+                            <li><span>Version Control</span><br>Skilled in using Git for version control, including branching, merging, and managing repositories on GitHub.</li>
+                        </ul>
+                    </div>                    
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>June 2022 - Feb 2023</span><br>GIS/GPS Manager - Project: TSWB Mapping of Waqf Properties of Telangana (IITH)</li>
+                            <li><span>2022</span><br>MTech from IIT Hyderabad</li>
+                            <li><span>2018</span><br>MTech from NIT Surathkal</li>
+                            <li><span>2015</span><br>BTech from KLUniveristy Vijayawada</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services" class = "segment">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="services-container">
+                    <i class="fa fa-code"></i>
+                    <h2>Web Development</h2>
+                    <ul>
+                        <!-- <i class="fa-brands fa-html5"></i> -->
+                        <!-- <i class="fa-brands fa-css3-alt"></i> -->
+                        <!-- <i class="fa-brands fa-square-js"></i> -->
+                        <!-- <i class="fa-brands fa-python"></i> -->
+                        <li><img src="images/HTML-logo.png"> HTML</li>
+                        <li><img src="images/CSS3_logo.png"> CSS</li>
+                        <li><img src="images/JavaScript-logo.png"> JavaScript</li>
+                        <li><img src="images/AJAX_logo.png" style="width : 60px; height : 30px; margin-right: 20px;"> AJAX</li>
+                        <li><img src="images/JSON.png"> JSON</li>
+                    </ul>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+                <div class="services-container">
+                    <i class="fa fa-crop-alt"></i>
+                    <h2>Data Analysis</h2>
+                    <ul>
+                        <li><img src="images/mysql-logo.png"> MySQL</li>
+                        <li><img src="images/python-logo.png"> Python</li>
+                        <li><img src="images/Pandas_logo.png"> Pandas</li>
+                    </ul>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+                <div class="services-container">
+                    <i class="fab fa-app-store"></i>
+                    <h2>GUI Development</h2>
+                    <ul>
+                        <li><img src="images/python-logo.png"> Python</li>
+                        <li><img src="images/tkinter-logo.png"> Tkinter</li>
+                    </ul>
+                    <!-- <a href="#">Learn more</a> -->
+
+                    <h2 style="margin-top: 10px;">Version Control</h2>
+                    <ul>
+                        <li><img src="images/Git-logo.png"> Git</li>
+                        <li><img src="images/guithub-logo.png"> GitHub</li>
+                    </ul>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio" class = "segment">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work visible">
+                    <img src="images/social-media.jpg">
+                    <div class="app-icon">
+                        <img src="images/facebook-logo.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Social Media Apps</h3>
+                        <p>Developed responsive clones of Facebook home page and profile page utilizing HTML, CSS, and JavaScript to ensure a seamless user experience across different devices</p>
+                        <div>
+                            <a href="Clone Projects/Socialbook/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work visible">
+                    <img src="images/video-streaming.png">
+                    <div class="app-icon">
+                        <img src="images/YouTube_logo.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Video Streaming Apps</h3>
+                        <p>Created responsive clones of YouTube home page utilizing HTML, CSS, and JavaScript. Additionally, enhanced the clone by implementing an interactive video playback page.</p>
+                        <div>
+                            <a href="Clone Projects/Youtube-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work visible">
+                    <img src="images/airbnb.jpg">
+                    <div class="app-icon">
+                        <img src="images/airbnb-logo.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Property Rental App</h3>
+                        <p>Developed responsive clones of various Airbnb home pages including popular destinations, property listings, and online packages using HTML, CSS and JavaScript.</p>
+                        <div>
+                            <a href="Clone Projects/Airbnb-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- hidden by default and visibile on show button click -->
+            <div class="work-list hide">
+                <div class="work">
+                    <img src="images/social-media_2.jpg">
+                    <div class="app-icon">
+                        <img src="images/linkedin-logo.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Social Media Apps</h3>
+                        <p>Developed responsive clones LinkedIn home page and profile page utilizing HTML, CSS, and JavaScript to ensure a seamless user experience across different devices</p>
+                        <div>
+                            <a href="Clone Projects/LinkedIn-website clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/video-streaming_2.png">
+                    <div class="app-icon">
+                        <img src="images/netflix-logo1.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Video Streaming Apps</h3>
+                        <p>Created responsive clone Netflix home pages utilizing HTML, CSS, and JavaScript.</p>
+                        <div>
+                            <a href="Clone Projects/Netfilx-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="work">
+                    <img src="images/airbnb.jpg">
+                    <div class="app-icon">
+                        <img src="images/airbnb-logo.png">
+                    </div>
+                    <div class="layer">
+                        <h3>Property Rental App</h3>
+                        <p>Developed responsive clones of various Airbnb home pages including popular destinations, property listings, and online packages using HTML, CSS and JavaScript.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> -->
+            </div>
+
+            <a class="btn" id="showmore">See More</a>
+        </div>
+    </div>
+
+    <div id="contact" class = "segment">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://twitter.com/Bhargav_theBoss" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Bhargav-j" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Jeereddy_Bhargav_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <input type="text" name = "Date" id="datetime-input">
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <span id="msg"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; Bhargav Jeereddy <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
