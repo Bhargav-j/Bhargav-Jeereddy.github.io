@@ -783,13 +783,17 @@ form .btn2:active {
 /* responsive for mobile devices */
 @media (max-width: 500px){
 
+    .container {
+        padding : 10px 5%;
+    }
+
     .header-text {
         margin-top: 75%;
         font-size: 1.15rem;
     }
 
     .work{
-        flex : 0 0 300px;
+        flex : 0 0 100%;
     }
 
     .work-description p {
