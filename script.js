@@ -110,33 +110,21 @@ function changeTheme(){
     // const backgroundColor = rootStyles.getPropertyValue('--bg');
     const foregroundColor = rootStyles.getPropertyValue('--fc');
     // console.log(foregroundColor);
+    // if white, change to black
     if (foregroundColor == "#fff"){
         document.documentElement.style.setProperty('--bg', '#fff');
         document.documentElement.style.setProperty('--fc', '#080808');
         document.documentElement.style.setProperty('--about-font', '#161414');
         document.documentElement.style.setProperty('--services-bg', '#e3e2e2');
+        document.documentElement.style.setProperty('--projects-bg', '#232121');
     } else {
         document.documentElement.style.setProperty('--bg', '#080808');
         document.documentElement.style.setProperty('--fc', '#fff');
         document.documentElement.style.setProperty('--about-font', '#ababab');
         document.documentElement.style.setProperty('--services-bg', '#262626');
+        document.documentElement.style.setProperty('--projects-bg', '#fff');
     }
 };
-
-
-////////////////////  Show More button on porfolio //////////////////
-
-const showMore = document.getElementById("showmore");
-const workList = document.querySelectorAll(".work-list");
-
-showMore.addEventListener('click', () => {
-    workList[1].classList.toggle("hide");
-    if (showMore.innerHTML === "See More"){
-        showMore.innerHTML = "See Less";
-    } else if (showMore.innerHTML === "See Less"){
-        showMore.innerHTML = "See More";
-    }
-});
 
 
 //////////////// Sroll Animation //////////////////
@@ -144,10 +132,12 @@ showMore.addEventListener('click', () => {
 const aboutCol1 = document.querySelector(".about-col-1");
 const aboutCol2 = document.querySelector(".about-col-2");
 const Sevicesgrid = document.querySelectorAll(".services-container");
-const Work = document.querySelectorAll(".visible");
+const projectContainer1 = document.querySelector(".project-container-1");
+// const work = document.querySelectorAll(".work-group");
+const projectContainer2 = document.querySelector(".project-container-2");
 const contact = document.getElementById("contact");
 
-scrollEffectArray = [aboutCol1, aboutCol2,...Sevicesgrid ,...Work, showMore, contact];
+scrollEffectArray = [aboutCol1, aboutCol2,...Sevicesgrid ,projectContainer1, projectContainer2, contact];
 
 window.addEventListener("scroll", () => {
     scrollEffectArray.forEach(ele => {
@@ -161,15 +151,77 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// scrollEffectArray.forEach(ele => {
-//     // console.log(ele);
-//     window.addEventListener("scroll", () => {
-//         const rectoffset = ele.getBoundingClientRect();
-//         if (rectoffset.top < window.innerHeight && rectoffset.bottom >= 0){
-//                 ele.classList.add("appear");
-//                 // console.log(ele.classList, "added APPEAR")
-//             } else {
-//                 ele.classList.remove("appear");
-//             }
-//     });
-// });
+///////////////////  Script for project containers ////////////////
+
+const childElement = document.querySelectorAll(".scroll-indicator");
+
+// Adding scroll effect to buttons based on choosen button
+
+childElement.forEach(dirArrow => {
+  dirArrow.addEventListener("click", (event) => {
+        var direction;
+        const parentElement = event.target.parentElement;
+        const siblingElement = parentElement.querySelector('.work-group');
+        const siblingVisibleWidth = siblingElement.clientWidth;
+        const siblingScrollleft = siblingElement.scrollLeft;
+        
+        if (dirArrow.classList.contains("left")) {
+        direction = "right";
+        } else {
+        direction = 'left';
+        }
+
+        // Scroll by the visible width in the specified direction
+        siblingElement.scrollBy({
+            left: direction === 'left' ? siblingVisibleWidth : -siblingVisibleWidth,
+            behavior: "smooth",
+        });
+
+    // console.log(siblingScrollleft); 
+    });
+});
+
+// Hiding the direction buttons if the scroll reaches end
+
+const parentElement = document.querySelectorAll(".work-group");
+const leftArrow = document.querySelectorAll(".scroll-indicator.left");
+const rightArrow = document.querySelectorAll(".scroll-indicator.right");
+
+parentElement.forEach((parent, index) => {
+    parent.addEventListener("scroll", () => {
+        const scrollLeft = parent.scrollLeft;
+        const maxScrollLeft = parent.scrollWidth - parent.clientWidth;
+        if (scrollLeft === 0) {
+            leftArrow[index].style.opacity = "0";
+            
+        } else {
+            leftArrow[index].style.opacity = "1";
+        }
+
+        if (scrollLeft >= maxScrollLeft-300) {
+            rightArrow[index].style.opacity = "0";
+        } else {
+            rightArrow[index].style.opacity = "1";
+        }
+    });
+});
+
+// Changing the work-list display from flex to grid 
+const showMore = document.querySelectorAll(".in-project-btn");
+const workItems = document.querySelectorAll(".work-group");
+showMore.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+        if (btn.innerHTML === "See All"){
+            btn.innerHTML = "See Less";
+            workItems[index].classList.add("show-all");
+            leftArrow[index].classList.add("show-all");
+            rightArrow[index].classList.add("show-all");
+        } else if (btn.innerHTML === "See Less"){
+            workItems[index].classList.remove("show-all");
+            leftArrow[index].classList.remove("show-all");
+            rightArrow[index].classList.remove("show-all");
+            btn.innerHTML = "See All";
+        }
+    });
+});
+

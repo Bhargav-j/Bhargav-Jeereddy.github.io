@@ -1,0 +1,53 @@
+1. On page load,
+	1. We import the class of name of the user.
+	2. If search for any locally stored names using localStorage.getItem() and store the name in an variable. If no value empty string.
+	3. We assgin the varibale to imported user class innerHTML.
+	4. And add an eventListerner('change') to listern any change in user Class and immediately save that change using event.target.value to the localstorage
+	5. We save using localStorage.setItem(). We should use the same name that we searched earlier.
+	6. We import and save the locally stored todo items which are objects stored in JSON format using JSON.parse(LocalStorage.getItem()) otherwise set the item to empty array. 
+	7. When we are getting or setting element, we should be using the same name in calling method and better save with the same name in the script.
+	8. We import the form element
+	9. We reset the form to have a clean form after loading using formclass.reset()
+	10. Add eventListener to form on ('submit') and we prevent the form default submit event through event.preventDefault()
+	11. We take all the values that are submitted throught the form with event.target.value_name.value and store them as object in a variable
+	12. We push that variable to the main storage variable and set the new array in the localstorage using set method by JSON.stringifying the array
+	13. Clear the form input boxes using event.target.reset()
+	14. Call the main function where we are creating the elements for todo lists saved in the local storage.
+	15. This main function should be called everytime when any modification been done.
+	16. We should call the main function ooutside the submit eventlisterner too because, if any previosuly stored todo list's present should be generated while loading the page.
+
+2. Main function()
+	1. We import the div element which should carry all the elements to be created for each todo list.
+	2. We on safe zone clear all the innerHTML passing the empty string.
+	3. We run the forEach loop for the const object variable created for the the array saved in local Storage.
+	4. In forEach loop, we pass each element at once through an variable cab be like ex. todo where the cont variable is todos
+	5. we create all the elements using createElement method in the same structure of html.
+	6. We add classes to those elements using element.ClassList.add('class_name')
+	7. we add type to the input element using input.type = "checkbox" and input.checked = todo.done (1 or 0 based on value of done)
+	8. we connect elements with eachother as in html format and write innerHTML for required elements.
+	9. Now add eventListerners to those elements which need functionality. input chekbox element, edit button and delete button
+
+3. Checkbox element 
+	1. Add eventListener('click'), which get the event.target.value which is checked(true) or unchecked(fasle)
+	2. Based on that value todo.done is modified which is a object property of todos.
+	3. Based on todo.done, we add the class to the element which change its appearence
+	4. We call the main function again to appear the changes made.
+
+4. Edit element
+	1. Add eventListener('click'), which remove the 'readonly' attribute from the input element through removeAttribute('readonly')
+	2. Before that we should bring the input element inside this event Listener function through query selector.
+	3. Now input can be edited and we give focus to input through input.foucs()
+	4. Now we add event Listener to the input element ('blur'), we get activated if we click on any other part of screen otherthan input box
+	5. This event will add the readonly attribute back to the input element through 'setAttribute('readonly', true)'
+	6. Will update the todo.content through event.target.value which is actually the input value
+	7. setItem to the local storage again and call the main function at last
+
+5. Delete element
+	1. Add click event Listener which will remove the clicked todo-item from the todos array
+	2. We use todos = todos.filter(t => t != todo); which will remove the t i.e current element
+	3. setItem to the local storage again and call the main function at last.
+
+IMP points 
+	1. Why only create all the eventListeners for input:checkbox, edit and Delete inside the forloop which is used to generate the each todo-item?
+	Ans : Like this we are creating the events for every above mentioned elements in every todo-items and we want to change the todos elements based on the values user changed.
+	
