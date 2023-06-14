@@ -211,12 +211,15 @@ const showMore = document.querySelectorAll(".in-project-btn");
 const workItems = document.querySelectorAll(".work-group");
 showMore.forEach((btn, index) => {
     btn.addEventListener('click', () => {
-        workItems[index].classList.toggle("show-all");
-        leftArrow[index].classList.toggle("show-all");
-        rightArrow[index].classList.toggle("show-all");
         if (btn.innerHTML === "See All"){
             btn.innerHTML = "See Less";
+            workItems[index].classList.add("show-all");
+            leftArrow[index].classList.add("show-all");
+            rightArrow[index].classList.add("show-all");
         } else if (btn.innerHTML === "See Less"){
+            workItems[index].classList.remove("show-all");
+            leftArrow[index].classList.remove("show-all");
+            rightArrow[index].classList.remove("show-all");
             btn.innerHTML = "See All";
         }
     });
