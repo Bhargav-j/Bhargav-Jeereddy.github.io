@@ -792,6 +792,10 @@ form .btn2:active {
         font-size: 1.15rem;
     }
 
+    .work-group {
+        gap : 0px;
+    }
+
     .work{
         flex : 0 0 100%;
     }
