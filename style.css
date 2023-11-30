@@ -361,12 +361,12 @@ nav .fas {
 
 #services {
     /* modified : original 30px 0 */
-    padding : 30px 0 30px;
+    padding : 30px 0 10px;
 }
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: minmax(250px, 2fr) 1fr;
     grid-gap: 40px;
     margin-top : 50px;
 }
@@ -381,7 +381,7 @@ nav .fas {
 }
 
 .services-list div i {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 30px;
 }
 
@@ -423,6 +423,26 @@ nav .fas {
 .services-list div:hover{
     background-color: #ff004f;
     transform: translateY(-10px);
+}
+
+.services-container h4{
+    font-size: 25px;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.InlineUL {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.InlineUL li{
+    margin-right: 35px !important;
+}
+
+.InlineUL li img {
+    margin-right: 10px !important;
 }
 
 #portfolio {
@@ -857,6 +877,16 @@ form .btn2:active {
 
     .about-col-2 {
         font-size: 14px;
+    }
+
+    .services-list{
+        display: block;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .services-list div{
+        margin-bottom: 10px;
     }
 
     .services-list div i{
