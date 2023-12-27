@@ -135,9 +135,11 @@ const Sevicesgrid = document.querySelectorAll(".services-container");
 const projectContainer1 = document.querySelector(".project-container-1");
 // const work = document.querySelectorAll(".work-group");
 const projectContainer2 = document.querySelector(".project-container-2");
+const projectContainer3 = document.querySelector(".project-container-3");
 const contact = document.getElementById("contact");
 
-scrollEffectArray = [aboutCol1, aboutCol2,...Sevicesgrid ,projectContainer1, projectContainer2, contact];
+
+scrollEffectArray = [aboutCol1, aboutCol2,...Sevicesgrid ,projectContainer1, projectContainer2, projectContainer3, contact];
 
 window.addEventListener("scroll", () => {
     scrollEffectArray.forEach(ele => {

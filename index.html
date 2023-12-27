@@ -1,464 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Personal portfolio</title>
-</head>
-<body>
-    <div id="header" class = "segment">
-        <div class="container">
-            <nav>
-                <div>
-                    <h1 class="first-letter">B</h1>
-                    <h1 class="name-letter">HARGAV</h1>
-                </div>
-                <!-- <img src="images/logo.png" class="logo"> -->
-                <ul id="sidemenu">
-                    <li><a class = "nav-link active-navbar" href="#header">Home</a></li>
-                    <li><a class = "nav-link" href="#about">About</a></li>
-                    <li><a class = "nav-link" href="#services">Services</a></li>
-                    <li><a class = "nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class = "nav-link" href="#contact">Contact</a></li>
-                    <!-- <i class ="fas fa-times" onclick="closemenu()"></i> -->
-                </ul>
-                <i class="fa-solid fa-moon" onclick="changeTheme()"></i>
-                <i class ="fas fa-bars" id="sidemenu-toggle" onclick="openmenu()"></i>
-            </nav>
+  </head>
+  <body>
+    <div id="header" class="segment">
+      <div class="container">
+        <nav>
+          <div>
+            <h1 class="first-letter">B</h1>
+            <h1 class="name-letter">HARGAV</h1>
+          </div>
+          <!-- <img src="images/logo.png" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a class="nav-link active-navbar" href="#header">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <!-- <i class ="fas fa-times" onclick="closemenu()"></i> -->
+          </ul>
+          <i class="fa-solid fa-moon" onclick="changeTheme()"></i>
+          <i class="fas fa-bars" id="sidemenu-toggle" onclick="openmenu()"></i>
+        </nav>
 
-            <div class="header-text">
-                <p>Frontend Web Developer</p>
-                <h1>Hi, I'm <span>Bhargav Jeereddy</span><br>From Hyderabad, India</h1>
-                <div class="contact-top">
-                    <p><i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                        <a href="https://twitter.com/Bhargav_theBoss" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/Bhargav-j" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/Jeereddy_Bhargav_Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
+        <div class="header-text">
+          <p>Frontend Web Developer</p>
+          <h1>
+            Hi, I'm <span>Bhargav Jeereddy</span><br />From Hyderabad, India
+          </h1>
+          <div class="contact-top">
+            <p>
+              <i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+              <a href="https://twitter.com/Bhargav_theBoss" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://github.com/Bhargav-j" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+            <a
+              href="images/Jeereddy_Bhargav_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="about" class = "segment">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/about-img.jpg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>An adaptable and driven individual, 
-                        I am passionate about Frontend Web development and possess expertise in HTML, CSS, JavaScript, React.
-                        With a hunger for knowledge and an eagerness to embrace new technologies, I can thrive in dynamic and innovative environments. 
-                        My ability to quickly learn and apply new concepts allows me to stay at the forefront of emerging trends in web development. 
-                        I am dedicated to creating visually appealing and user-friendly websites,with a focus on responsive design while leveraging my skills in Bootstrap, MaterialUI to develop dynamic web applications. 
-                        I am committed to continuously expanding my skill set to make a meaningful impact in the ever-evolving field of web development.</p>
-                    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quas possimus ea excepturi saepe quidem dignissimos vitae. Cupiditate ipsa perferendis est, praesentium inventore unde voluptatibus alias deleniti beatae, temporibus omnis doloribus sunt maxime, delectus reprehenderit ratione enim minima ipsam? Sequi itaque earum eaque non pariatur ipsa, praesentium ut iste, dolore perferendis cumque, similique voluptatibus quas?</p> -->
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('achievements')"><i class="fa-solid fa-medal"></i> Achievements</p>
-                        <p class="tab-links" onclick="opentab('skills')"><i class="fa-solid fa-lightbulb"></i> Skills</p>
-                        <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-book"></i>Experience & Education</p>
-                    </div>
+    <div id="about" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/about-img.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              An adaptable and driven individual, I am passionate about Frontend
+              Web development and possess expertise in HTML, CSS, JavaScript,
+              React. With a hunger for knowledge and an eagerness to embrace new
+              technologies, I can thrive in dynamic and innovative environments.
+              My ability to quickly learn and apply new concepts allows me to
+              stay at the forefront of emerging trends in web development. I am
+              dedicated to creating visually appealing and user-friendly
+              websites,with a focus on responsive design while leveraging my
+              skills in Bootstrap, MaterialUI to develop dynamic web
+              applications. I am committed to continuously expanding my skill
+              set to make a meaningful impact in the ever-evolving field of web
+              development.
+            </p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quas possimus ea excepturi saepe quidem dignissimos vitae. Cupiditate ipsa perferendis est, praesentium inventore unde voluptatibus alias deleniti beatae, temporibus omnis doloribus sunt maxime, delectus reprehenderit ratione enim minima ipsam? Sequi itaque earum eaque non pariatur ipsa, praesentium ut iste, dolore perferendis cumque, similique voluptatibus quas?</p> -->
 
-                    <div class="tab-contents active-tab" id="achievements">
-                        <ul>
-                            <li><span>Productivity</span><br>Boosted productivity by 20% through automating daily creation of comprehensive Excel summaries for surveyed data which include various parameters. - TSWB project</li>
-                            <li><span>Optimization</span><br>Streamlined data collection and manipulation by seamlessly integrating Python with MySQL API, including creating a robust RDBMS. - TSWB project</li>
-                            <li><span>Development</span><br>Developed a robust GUI with image compression and file manipulation capabilities, resulting in a 50% reduction in data verification and uploading load. - TSWB project</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="skills">
-                        <ul>
-                            <li><span>Frontend Web Developmet</span><br>Building modern, responsive website applications - HTML / CSS / JS / React</li>
-                            <li><span>Data Analysis</span><br>Relational Database design and management - Pandas / MySQL</li>
-                            <li><span>GUI Development</span><br>Creating interactive and user-friendly desktop applications. - Python / Tkinter</li>
-                            <li><span>Version Control</span><br>Skilled in using Git for version control, including branching, merging, and managing repositories on GitHub.</li>
-                        </ul>
-                    </div>                    
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>June 2022 - Feb 2023</span><br>GIS/GPS Manager - Project: TSWB Mapping of Waqf Properties of Telangana (IITH)</li>
-                            <li><span>2022</span><br>MTech from IIT Hyderabad</li>
-                            <li><span>2018</span><br>MTech from NIT Surathkal</li>
-                            <li><span>2015</span><br>BTech from KLUniveristy Vijayawada</li>
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('achievements')"
+              >
+                <i class="fa-solid fa-medal"></i> Achievements
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">
+                <i class="fa-solid fa-lightbulb"></i> Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                <i class="fa-solid fa-book"></i>Experience & Education
+              </p>
             </div>
+
+            <div class="tab-contents active-tab" id="achievements">
+              <ul>
+                <li>
+                  <span>Productivity</span><br />Boosted productivity by 20%
+                  through automating daily creation of comprehensive Excel
+                  summaries for surveyed data which include various parameters.
+                  - TSWB project
+                </li>
+                <li>
+                  <span>Optimization</span><br />Streamlined data collection and
+                  manipulation by seamlessly integrating Python with MySQL API,
+                  including creating a robust RDBMS. - TSWB project
+                </li>
+                <li>
+                  <span>Development</span><br />Developed a robust GUI with
+                  image compression and file manipulation capabilities,
+                  resulting in a 50% reduction in data verification and
+                  uploading load. - TSWB project
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Web Developmet</span><br />Building modern,
+                  responsive website applications - HTML / CSS / JS / React
+                </li>
+                <li>
+                  <span>Data Analysis</span><br />Relational Database design and
+                  management - Pandas / MySQL
+                </li>
+                <li>
+                  <span>GUI Development</span><br />Creating interactive and
+                  user-friendly desktop applications. - Python / Tkinter
+                </li>
+                <li>
+                  <span>Version Control</span><br />Skilled in using Git for
+                  version control, including branching, merging, and managing
+                  repositories on GitHub.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>June 2022 - Feb 2023</span><br />GIS/GPS Manager -
+                  Project: TSWB Mapping of Waqf Properties of Telangana (IITH)
+                </li>
+                <li><span>2022</span><br />MTech from IIT Hyderabad</li>
+                <li><span>2018</span><br />MTech from NIT Surathkal</li>
+                <li>
+                  <span>2015</span><br />BTech from KLUniveristy Vijayawada
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="services" class = "segment">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div class="services-container">
-                    <h2><i class="fa fa-code"></i>    Web Development Applications</h2>
-                    
-                    <!-- <ul> -->
-                        <!-- <i class="fa-brands fa-html5"></i> -->
-                        <!-- <i class="fa-brands fa-css3-alt"></i> -->
-                        <!-- <i class="fa-brands fa-square-js"></i> -->
-                        <!-- <i class="fa-brands fa-python"></i> -->
-                        
-                        <!-- <li><img src="images/HTML-logo.png"> HTML</li>
+    <div id="services" class="segment">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div class="services-container">
+            <h2><i class="fa fa-code"></i> Web Development Applications</h2>
+
+            <!-- <ul> -->
+            <!-- <i class="fa-brands fa-html5"></i> -->
+            <!-- <i class="fa-brands fa-css3-alt"></i> -->
+            <!-- <i class="fa-brands fa-square-js"></i> -->
+            <!-- <i class="fa-brands fa-python"></i> -->
+
+            <!-- <li><img src="images/HTML-logo.png"> HTML</li>
                         <li><img src="images/CSS3_logo.png"> CSS</li>
                         <li><img src="images/JavaScript-logo.png"> JavaScript</li>
                         <li><img src="images/AJAX_logo.png" style="width : 60px; height : 30px; margin-right: 20px;"> AJAX</li>
                         <li><img src="images/JSON.png"> JSON</li> -->
-                    <!-- </ul> -->
+            <!-- </ul> -->
 
-                    <!-- <a href="#">Learn more</a> -->
-                    <h4>Languages</h4>
-                    <ul class="InlineUL">
-                        <li><img src="images/HTML-logo.png"> HTML 5</li>
-                        <li><img src="images/CSS3_logo.png"> CSS 3</li>
-                        <li><img src="images/JavaScript-logo.png"> JavaScript (ES6)</li>
-                        <li><img src="images/Typescript_logo_2020.svg.png"> TypeScript</li>
-                    </ul>
-                    
-                    <h4>Frameworks/Libraries</h4>
-                    <ul class="InlineUL">
-                        <li><img src="images/react logo.png"> React.js</li>
-                        <li><img src="images/redux logo.svg"> Redux (State Management)</li>
-                        <li><img src="images/Bootstrap_logo.svg.png"> Bootstrap 5</li>
-                        <li><img src="images/Sass_Logo_Color.svg.png"> SASS</li>
-                        <li><img src="images/material-ui-logo.png"> MaterialUI</li>
-                    </ul>
+            <!-- <a href="#">Learn more</a> -->
+            <h4>Languages</h4>
+            <ul class="InlineUL">
+              <li><img src="images/HTML-logo.png" /> HTML 5</li>
+              <li><img src="images/CSS3_logo.png" /> CSS 3</li>
+              <li><img src="images/JavaScript-logo.png" /> JavaScript (ES6)</li>
+              <li>
+                <img src="images/Typescript_logo_2020.svg.png" /> TypeScript
+              </li>
+            </ul>
 
-                    <h4>Testing & Quality Assurance</h4>
-                    <ul class="InlineUL">
-                        <li><img src="images/react-testing-library-logo.png"> React Testing Library (RTL)</li>
-                        <li><img src="images/jest-logo-png-transparent.png"> Jest</li>
-                    </ul>
-                    
-                    <h4>API Proficiency</h4>
-                    <ul class="InlineUL">
-                        <li><img src="images/Restful API logo.png"> RESTful API</li>
-                        <li><img src="images/graphQL Apollo clinet logo.png"> GraphQL (Apollo Client/React)</li>
-                    </ul>
+            <h4>Frameworks/Libraries</h4>
+            <ul class="InlineUL">
+              <li><img src="images/react logo.png" /> React.js</li>
+              <li>
+                <img src="images/redux logo.svg" /> Redux (State Management)
+              </li>
+              <li><img src="images/Bootstrap_logo.svg.png" /> Bootstrap 5</li>
+              <li><img src="images/Sass_Logo_Color.svg.png" /> SASS</li>
+              <li><img src="images/material-ui-logo.png" /> MaterialUI</li>
+            </ul>
 
+            <h4>Testing & Quality Assurance</h4>
+            <ul class="InlineUL">
+              <li>
+                <img src="images/react-testing-library-logo.png" /> React
+                Testing Library (RTL)
+              </li>
+              <li><img src="images/jest-logo-png-transparent.png" /> Jest</li>
+            </ul>
 
-                </div>
+            <h4>API Proficiency</h4>
+            <ul class="InlineUL">
+              <li><img src="images/Restful API logo.png" /> RESTful API</li>
+              <li>
+                <img src="images/graphQL Apollo clinet logo.png" /> GraphQL
+                (Apollo Client/React)
+              </li>
+            </ul>
 
-                <div class="services-container">
-                    <!-- <i class="fab fa-app-store"></i> -->
-                    <h2>GUI Development</h2>
-                    <ul>
-                        <li><img src="images/python-logo.png"> Python</li>
-                        <li><img src="images/tkinter-logo.png"> Tkinter</li>
-                    </ul>
-                    <!-- <a href="#">Learn more</a> -->
+            <h4>Firebase</h4>
+            <ul class="InlineUL">
+              <li>
+                <img src="images/firebase-authentication-logo1.png" />
+                Authentication
+              </li>
+              <li>
+                <img src="images/firestore logo.png" /> Firestore Database
+              </li>
+            </ul>
+          </div>
 
-                    <!-- <i class="fa fa-crop-alt"></i> -->
-                    <h2>Data Analysis</h2>
-                    <ul>
-                        <li><img src="images/mysql-logo.png"> MySQL</li>
-                        <li><img src="images/python-logo.png"> Python</li>
-                        <li><img src="images/Pandas_logo.png"> Pandas</li>
-                    </ul>
+          <div class="services-container">
+            <!-- <i class="fab fa-app-store"></i> -->
+            <h2>GUI Development</h2>
+            <ul>
+              <li><img src="images/python-logo.png" /> Python</li>
+              <li><img src="images/tkinter-logo.png" /> Tkinter</li>
+            </ul>
+            <!-- <a href="#">Learn more</a> -->
 
-                    <h2 style="margin-top: 10px;">Version Control</h2>
-                    <ul>
-                        <li><img src="images/Git-logo.png"> Git</li>
-                        <li><img src="images/guithub-logo.png"> GitHub</li>
-                    </ul>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
+            <!-- <i class="fa fa-crop-alt"></i> -->
+            <h2>Data Analysis</h2>
+            <ul>
+              <li><img src="images/mysql-logo.png" /> MySQL</li>
+              <li><img src="images/python-logo.png" /> Python</li>
+              <li><img src="images/Pandas_logo.png" /> Pandas</li>
+            </ul>
 
-            </div>
+            <h2 style="margin-top: 10px">Version Control</h2>
+            <ul>
+              <li><img src="images/Git-logo.png" /> Git</li>
+              <li><img src="images/guithub-logo.png" /> GitHub</li>
+            </ul>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
         </div>
+      </div>
     </div>
 
-    <div id="portfolio" class = "segment">
-        <div class="container">
-            <h1 class="sub-title">My Portfolio</h1>
-            
-            <div class="project-container-1">
-                <h3>JavaScript Projects</h3>
-                <p>With these projects, I had the opportunity to learn key concepts in HTML, CSS, and JavaScript and gain a deeper understanding of JavaScript DOM manipulation, event handling, data storage and retrieval using local storage, and form validations. 
-                    Through hands-on practice, I learned how to dynamically update the web page's content, respond to user interactions, and store and retrieve data from the browser's local storage. Additionally, implementing form validations allowed me to ensure that user input is accurate and meets the required criteria. These practical experiences have strengthened my skills in web development and provided me with a solid foundation in these fundamental concepts.</p>
-                
-                    <div class="work-container">
-    
-                    <i class="fa-solid fa-angle-right scroll-indicator right"></i>
-    
-                    <i class="fa-solid fa-angle-left scroll-indicator left"></i>
-    
-                    <div class="work-group">
-    
-                        <div class="work">
-                            <img src="images/to-do-list.jpg">
-                            <div class="work-description">
-                                <h3>Todo List App</h3>
-                                <p>This project focuses on creating a user interface to manage and organize tasks. 
-                                    Key points include JavaScript DOM manipulation for dynamically adding, updating, and removing tasks, and utilizing local storage to persist data between sessions, ensuring task data is retained even when the browser is closed.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Todo List App using Local Storage/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/Drag and Drop.png">
-                            <div class="work-description">
-                                <h3>Drag and Drop</h3>
-                                <p> This project focuses on implementing interactive drag-and-drop functionality for rearranging elements on a web page. 
-                                    Key points include utilizing JavaScript event listeners for tracking drag events, manipulating element positions based on drag coordinates, and updating the UI in real-time to provide a seamless drag-and-drop experience.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Drag and Drop/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/calculator-L.png">
-                            <div class="work-description">
-                                <h3>Basic Calculator App</h3>
-                                <p>This project focuses on building a basic calculator functionality. 
-                                    Key points include capturing user input, performing mathematical operations, and displaying the results dynamically on the calculator interface. Additionally, it involves handling edge cases like division by zero and implementing clear/reset functionalities for a user-friendly calculator experience.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Calculator App/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/Model popup.png">
-                            <div class="work-description">
-                                <h3>Form Model popup</h3>
-                                <p>Project focuses on creating a modal popup window that contains a contact form. 
-                                    Key points include implementing event handling to open and close the modal,handling form submissions, validating user input and adding responsive design techniques for optimal display on different devices.
-                                </p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Contact Model Popup/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/dropdown-Menu.jpg">
-                            <div class="work-description">
-                                <h3>Dropdown Menu</h3>
-                                <p>The Responsive Dropdown Menu app project focuses on creating a dynamic navigation menu that adapts to different screen sizes. 
-                                    Key points include using media queries to implement responsive design, utilizing JavaScript to toggle the visibility of the dropdown menu, and styling the menu for optimal user experience across devices.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Drop Down Navigation Menu with Sub Menu/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/Infinite scroll random photo generaor.png">
-                            <div class="work-description">
-                                <h3>Infinite Random photo Generator</h3>
-                                <p>Project focuses on fetching and displaying random photos from an lorem picsum. 
-                                    Key points include responsive display of images, dynamically updating the UI with new images, and implementing infinite scrolling functionality to load more photos as the user scrolls.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Infinnite scroll random photo generator/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-    
-                        <div class="work">
-                            <img src="images/digital-clock-1.jpg">
-                            <div class="work-description">
-                                <h3>Digital Clock</h3>
-                                <p>The project focuses on displaying the current time in a digital format. 
-                                    Key points include utilizing JavaScript's Date object to retrieve the current time, using callback functions with setInterval to update the clock in real-time, and manipulating the DOM to dynamically display the time on the webpage.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Digital Clock/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
+    <div id="portfolio" class="segment">
+      <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
 
-                        <div class="work">
-                            <img src="images/Card Slider.jpg">
-                            <div class="work-description">
-                                <h3>Infinite carousel card slider</h3>
-                                <p>
-                                    This app focuses on creating a visually appealing carousel that continuously displays a set of cards. 
-                                    Key points include implementing JavaScript logic to handle the sliding animation and navigation of the cards, utilizing scroll properties of the elements to manipulate the scroll position.
-                                </p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Draggable Infinite Card Slider/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
+        <div class="project-container-1">
+          <h3>React Projects</h3>
+          <p>
+            Proficient in React development, I specialize in crafting seamless
+            and responsive user interfaces by integrating catalog displays and
+            detailed item functionalities using React. I leverage React Router
+            for efficient navigation and Redux for state management, ensuring
+            optimal data handling. With expertise in Firebase integration, I
+            implement secure user authentication features and seamlessly
+            integrate Firestore for efficient data retrieval and modification.
+            Additionally, I excel in API integration, adeptly interfacing with
+            RESTful APIs to expand application functionalities, fetching
+            supplementary data and demonstrating robust data handling and error
+            management skills.
+          </p>
 
-                        <div class="work">
-                            <img src="images/Drum kits.png">
-                            <div class="work-description">
-                                <h3>Drum Kits</h3>
-                                <p>The app focuses on creating interactive drum kit sounds triggered by user input through keyboard or mouse events. 
-                                    Key points include mapping key or click events to corresponding drum sounds and dynamically updating the visual appearance of the drum elements.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Drum Kits/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
+          <div class="work-container">
+            <i class="fa-solid fa-angle-right scroll-indicator right"></i>
 
-                        <div class="work">
-                            <img src="images/random color generator.png">
-                            <div class="work-description">
-                                <h3>Random color Generator</h3>
-                                The Random Color Generator app project focuses on generating random colors and displaying them on the screen. 
-                                Key points include generating random hexadicimal color values, updating the background color dynamically, and providing options for copying the color value to the clipboard.
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Random Color Generator/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
+            <i class="fa-solid fa-angle-left scroll-indicator left"></i>
 
-                        <div class="work">
-                            <img src="images/Character-Counter.png">
-                            <div class="work-description">
-                                <h3>Realtime Character Counter</h3>
-                                <p>This project focuses on providing a live character count as users type in a text input field. 
-                                    Key points include capturing user input events, updating the character count in real time, and implementing input validation for maximum character limit.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Real-time Character counter/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="work">
-                            <img src="images/Accordion.png">
-                            <div class="work-description">
-                                <h3>Accordion</h3>
-                                <p>The Accordion app project focuses on creating an interactive accordion-style component for displaying collapsible content sections. 
-                                    Key points include toggling the visibility of content sections on click, applying smooth transitions for a better user experience, and managing the state of the accordion to ensure only one section is open at a time.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="JavaScript Projects/Accordion/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-    
+            <div class="work-group">
+              <div class="work">
+                <img src="images/ProTaskify.png" />
+                <!-- <img src="images/to-do-list.jpg" /> -->
+                <div class="work-description">
+                  <h3>ProTaskify - Task Manager App</h3>
+                  <h4>
+                    React/contextAPI/Firebase Integration/User
+                    Authentication/Real-time Functionality/Fully Responsive
+                  </h4>
+                  <p>
+                    ProTaskify is a user-specific, real-time task manager
+                    integrating Firebase services for secure authentication and
+                    Firestore for data storage. Leverages React Context API for
+                    seamless global state management. Offers dynamic task
+                    creation, edits, and real-time updates. A professional-grade
+                    solution for efficient task handling and organization
+                  </p>
                 </div>
-    
-                <a class="btn in-project-btn" >See All</a>
-            </div>
-    
-            <div class="project-container-2">
-                <h3>Clone Projects</h3>
-                <p>Cloning popular web apps provided valuable lessons in effective element structuring, emphasizing the significance of semantic HTML for accessibility and organization. Advanced CSS techniques, including flexbox, grid layout, and responsive design, enhanced my ability to create visually appealing and adaptable interfaces. Studying real-world implementations of features like video players and commenting systems expanded my knowledge and enabled me to replicate similar functionalities. Additionally, I gained insights into best practices such as code organization, naming conventions, and optimization, ensuring maintainable and performant code in my own projects.</p>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius itaque, doloribus consequatur asperiores fuga eos facere modi excepturi tenetur iusto velit eveniet! Tenetur id sequi, odio expedita sunt iusto, voluptatum voluptatibus est omnis autem deserunt minima ullam nostrum incidunt modi aspernatur nobis dolorum molestias harum possimus quis animi cupiditate sapiente. Doloribus, dolor. Culpa atque ea aut. Ad totam reprehenderit sunt fuga voluptate atque perferendis molestiae repellendus temporibus molestias blanditiis, deleniti quibusdam! Provident dolor corrupti, illo doloremque ullam cum dignissimos rem blanditiis accusamus voluptate soluta ad. Amet voluptas, voluptatem itaque praesentium consequuntur porro sed veritatis optio recusandae necessitatibus possimus iure?</p> -->
-                
-                <div class="work-container">
-                    
-                    <i class="fa-solid fa-angle-right scroll-indicator right"></i>
-    
-                    <i class="fa-solid fa-angle-left scroll-indicator left"></i>
-    
-                    <div class="work-group">
-    
-                        <div class="work">
-                            <img src="images/social-media.jpg">
-                            <div class="work-description">
-                                <h3>Facebook Web App</h3>
-                                <p> I successfully developed responsive clones of Facebook's home page and profile page. 
-                                    The primary areas of focus were implementing flex design, ensuring responsiveness across different devices, and maintaining well-organized code structure.</p>
-                                <!-- <p>Developed responsive clones of Facebook home page and profile page utilizing HTML, CSS, and JavaScript. </p> -->
-                            </div>
-                            <div class="click-icons">
-                                <a href="Clone Projects/Socialbook/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-        
-                        <div class="work">
-                            <img src="images/video-streaming.png">
-                            <div class="work-description">
-                                <h3>Youtube Web App</h3>
-                                <p>Created responsive clone of YouTube home page and enhanced it by implementing an interactive video playback page.
-                                    Through this project, I gained a deeper understanding of essential features such as video players and commenting systems and grid layout.</p>
-                            </div>
-                            <div class="click-icons">
-                                <a href="Clone Projects/Youtube-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-        
-                        <div class="work">
-                            <img src="images/airbnb.jpg">
-                            <div class="work-description">
-                                <h3>Airbnb Web App</h3>
-                                <p>Developed responsive clones of Airbnb's home pages, covering popular destinations, property listings, and online packages. 
-                                    This project allowed me to explore the effective use of grid and flex layout combinations, ensuring the responsive display of images.</p>
-                                <!-- <p>Developed responsive clones of various Airbnb home pages including popular destinations, property listings, and online packages using HTML, CSS and JavaScript.</p> -->
-                            </div>
-                            <div class="click-icons">
-                                <a href="Clone Projects/Airbnb-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
 
-                        <div class="work">
-                            <img src="images/social-media_2.jpg">
-                            <div class="work-description">
-                                <h3>LinkedIn Web App</h3>
-                                <p>Another web app LinkedIn is cloned further strengthened my skills in responsive design, allowing me to create a seamless user experience across various devices. 
-                                    I gained hands-on experience in implementing responsive layouts and optimizing the design for different screen sizes.</p>
-                                <!-- <p>Developed responsive clones LinkedIn home page and profile page utilizing HTML, CSS, and JavaScript to ensure a seamless user experience across different devices</p> -->
-                            </div>
-                            <div class="click-icons">
-                                <a href="Clone Projects/LinkedIn-website clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                            </div>
-                        </div>
-        
-                        <div class="work">
-                            <img src="images/video-streaming_2.png">
-                            <div class="work-description">
-                                <h3>Netflix Web App</h3>
-                                <p>I successfully created a responsive clone of the Netflix home page which enhance my skills in creating visually appealing web pages while maintaining simplicity and effectiveness. 
-                                    Additionally, I implemented an accordion feature in the FAQ section, providing an interactive and user-friendly experience for navigating through frequently asked questions.</p>
-                                <!-- <p>Created responsive clone Netflix home pages utilizing HTML, CSS, and JavaScript.</p> -->
-                            </div>
-                            <div class="click-icons">
-                                <a href="Clone Projects/Netfilx-clone/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects" target="_blank"><i class="fa-solid fa-link"></i></a>
-                        </div>
-
-                    
-                        </div>
-    
-                    </div>
+                <div class="click-icons">
+                  <a
+                    href="https://bhargav-j.github.io/task-manager/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/task-manager"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
                 </div>
-    
-                <a class="btn in-project-btn" >See All</a>
+              </div>
+
+              <div class="work">
+                <img src="images/Waqf Project App.png" />
+                <div class="work-description">
+                  <h3>Government Project Survey App - Clone</h3>
+                  <h4>
+                    React/Redux/Firebase & Firestore Integration/Surveyor Data
+                    Management/ Secure Modification Access/Real-time
+                    Functionality/Mobile Responsive
+                  </h4>
+                  <p>
+                    Built a responsive survey app clone integrating Redux,
+                    Firebase, and Firestore for real-time, secure data
+                    management. Enabled surveyed data upload, strict
+                    modification access, ensuring data integrity. Real-time
+                    updates empower surveyors with instant insights, enhancing
+                    efficiency in field operations and data-driven
+                    decision-making.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="https://bhargav-j.github.io/waqf-survey/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/waqf-survey"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Food Restuarent App.png" />
+                <div class="work-description">
+                  <h3>A Food Restaurant Web App</h3>
+                  <h4>
+                    React/React-Router/Modular Component Architecture/Fully
+                    Responsive/single-page application/Code Reusability
+                  </h4>
+                  <p>
+                    Developed a responsive food restaurant web app using React,
+                    featuring seamless navigation between sections via
+                    React-Router without page reloads. Employed reusable
+                    components for modularity, scalability, and a consistent UI.
+                    Ensured a captivating user experience with fully responsive
+                    design and efficient component-based development.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="https://bhargav-j.github.io/Food-restaurant-app/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Food-restaurant-app"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Pizza Delivery app.png" />
+                <div class="work-description">
+                  <h3>A Pizza Delivery Web App</h3>
+                  <h4>
+                    React/Bootstrap5/React-Router/Fully Responsive/Code
+                    Reusability/Enchanced UI experience
+                  </h4>
+                  <p>
+                    Created a single-page pizza delivery app with
+                    React, leveraging Bootstrap 5 for a responsive design.
+                    Utilized React-Router for seamless navigation. Prioritized
+                    code reusability, resulting in an enhanced UI experience,
+                    fostering efficiency and scalability in development for an
+                    intuitive user interface
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="https://bhargav-j.github.io/pizza-delivery-app/"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/pizza-delivery-app"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
             </div>
 
-            <!-- <div class="work-list">
+            <a class="btn in-project-btn">See All</a>
+          </div>
+        </div>
+
+        <div class="project-container-2">
+          <h3>JavaScript Projects</h3>
+          <p>
+            With these projects, I had the opportunity to learn key concepts in
+            HTML, CSS, and JavaScript and gain a deeper understanding of
+            JavaScript DOM manipulation, event handling, data storage and
+            retrieval using local storage, and form validations. Through
+            hands-on practice, I learned how to dynamically update the web
+            page's content, respond to user interactions, and store and retrieve
+            data from the browser's local storage. Additionally, implementing
+            form validations allowed me to ensure that user input is accurate
+            and meets the required criteria. These practical experiences have
+            strengthened my skills in web development and provided me with a
+            solid foundation in these fundamental concepts.
+          </p>
+
+          <div class="work-container">
+            <i class="fa-solid fa-angle-right scroll-indicator right"></i>
+
+            <i class="fa-solid fa-angle-left scroll-indicator left"></i>
+
+            <div class="work-group">
+              <div class="work">
+                <img src="images/to-do-list.jpg" />
+                <div class="work-description">
+                  <h3>Todo List App</h3>
+                  <p>
+                    This project focuses on creating a user interface to manage
+                    and organize tasks. Key points include JavaScript DOM
+                    manipulation for dynamically adding, updating, and removing
+                    tasks, and utilizing local storage to persist data between
+                    sessions, ensuring task data is retained even when the
+                    browser is closed.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Todo List App using Local Storage/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Drag and Drop.png" />
+                <div class="work-description">
+                  <h3>Drag and Drop</h3>
+                  <p>
+                    This project focuses on implementing interactive
+                    drag-and-drop functionality for rearranging elements on a
+                    web page. Key points include utilizing JavaScript event
+                    listeners for tracking drag events, manipulating element
+                    positions based on drag coordinates, and updating the UI in
+                    real-time to provide a seamless drag-and-drop experience.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Drag and Drop/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/calculator-L.png" />
+                <div class="work-description">
+                  <h3>Basic Calculator App</h3>
+                  <p>
+                    This project focuses on building a basic calculator
+                    functionality. Key points include capturing user input,
+                    performing mathematical operations, and displaying the
+                    results dynamically on the calculator interface.
+                    Additionally, it involves handling edge cases like division
+                    by zero and implementing clear/reset functionalities for a
+                    user-friendly calculator experience.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Calculator App/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Model popup.png" />
+                <div class="work-description">
+                  <h3>Form Model popup</h3>
+                  <p>
+                    Project focuses on creating a modal popup window that
+                    contains a contact form. Key points include implementing
+                    event handling to open and close the modal,handling form
+                    submissions, validating user input and adding responsive
+                    design techniques for optimal display on different devices.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Contact Model Popup/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/dropdown-Menu.jpg" />
+                <div class="work-description">
+                  <h3>Dropdown Menu</h3>
+                  <p>
+                    The Responsive Dropdown Menu app project focuses on creating
+                    a dynamic navigation menu that adapts to different screen
+                    sizes. Key points include using media queries to implement
+                    responsive design, utilizing JavaScript to toggle the
+                    visibility of the dropdown menu, and styling the menu for
+                    optimal user experience across devices.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Drop Down Navigation Menu with Sub Menu/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Infinite scroll random photo generaor.png" />
+                <div class="work-description">
+                  <h3>Infinite Random photo Generator</h3>
+                  <p>
+                    Project focuses on fetching and displaying random photos
+                    from an lorem picsum. Key points include responsive display
+                    of images, dynamically updating the UI with new images, and
+                    implementing infinite scrolling functionality to load more
+                    photos as the user scrolls.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Infinnite scroll random photo generator/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/digital-clock-1.jpg" />
+                <div class="work-description">
+                  <h3>Digital Clock</h3>
+                  <p>
+                    The project focuses on displaying the current time in a
+                    digital format. Key points include utilizing JavaScript's
+                    Date object to retrieve the current time, using callback
+                    functions with setInterval to update the clock in real-time,
+                    and manipulating the DOM to dynamically display the time on
+                    the webpage.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Digital Clock/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Card Slider.jpg" />
+                <div class="work-description">
+                  <h3>Infinite carousel card slider</h3>
+                  <p>
+                    This app focuses on creating a visually appealing carousel
+                    that continuously displays a set of cards. Key points
+                    include implementing JavaScript logic to handle the sliding
+                    animation and navigation of the cards, utilizing scroll
+                    properties of the elements to manipulate the scroll
+                    position.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Draggable Infinite Card Slider/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Drum kits.png" />
+                <div class="work-description">
+                  <h3>Drum Kits</h3>
+                  <p>
+                    The app focuses on creating interactive drum kit sounds
+                    triggered by user input through keyboard or mouse events.
+                    Key points include mapping key or click events to
+                    corresponding drum sounds and dynamically updating the
+                    visual appearance of the drum elements.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Drum Kits/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/random color generator.png" />
+                <div class="work-description">
+                  <h3>Random color Generator</h3>
+                  The Random Color Generator app project focuses on generating
+                  random colors and displaying them on the screen. Key points
+                  include generating random hexadicimal color values, updating
+                  the background color dynamically, and providing options for
+                  copying the color value to the clipboard.
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Random Color Generator/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Character-Counter.png" />
+                <div class="work-description">
+                  <h3>Realtime Character Counter</h3>
+                  <p>
+                    This project focuses on providing a live character count as
+                    users type in a text input field. Key points include
+                    capturing user input events, updating the character count in
+                    real time, and implementing input validation for maximum
+                    character limit.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Real-time Character counter/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/Accordion.png" />
+                <div class="work-description">
+                  <h3>Accordion</h3>
+                  <p>
+                    The Accordion app project focuses on creating an interactive
+                    accordion-style component for displaying collapsible content
+                    sections. Key points include toggling the visibility of
+                    content sections on click, applying smooth transitions for a
+                    better user experience, and managing the state of the
+                    accordion to ensure only one section is open at a time.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="JavaScript Projects/Accordion/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/JavaScript%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn in-project-btn">See All</a>
+        </div>
+
+        <div class="project-container-3">
+          <h3>Clone Projects</h3>
+          <p>
+            Cloning popular web apps provided valuable lessons in effective
+            element structuring, emphasizing the significance of semantic HTML
+            for accessibility and organization. Advanced CSS techniques,
+            including flexbox, grid layout, and responsive design, enhanced my
+            ability to create visually appealing and adaptable interfaces.
+            Studying real-world implementations of features like video players
+            and commenting systems expanded my knowledge and enabled me to
+            replicate similar functionalities. Additionally, I gained insights
+            into best practices such as code organization, naming conventions,
+            and optimization, ensuring maintainable and performant code in my
+            own projects.
+          </p>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eius itaque, doloribus consequatur asperiores fuga eos facere modi excepturi tenetur iusto velit eveniet! Tenetur id sequi, odio expedita sunt iusto, voluptatum voluptatibus est omnis autem deserunt minima ullam nostrum incidunt modi aspernatur nobis dolorum molestias harum possimus quis animi cupiditate sapiente. Doloribus, dolor. Culpa atque ea aut. Ad totam reprehenderit sunt fuga voluptate atque perferendis molestiae repellendus temporibus molestias blanditiis, deleniti quibusdam! Provident dolor corrupti, illo doloremque ullam cum dignissimos rem blanditiis accusamus voluptate soluta ad. Amet voluptas, voluptatem itaque praesentium consequuntur porro sed veritatis optio recusandae necessitatibus possimus iure?</p> -->
+
+          <div class="work-container">
+            <i class="fa-solid fa-angle-right scroll-indicator right"></i>
+
+            <i class="fa-solid fa-angle-left scroll-indicator left"></i>
+
+            <div class="work-group">
+              <div class="work">
+                <img src="images/social-media.jpg" />
+                <div class="work-description">
+                  <h3>Facebook Web App</h3>
+                  <p>
+                    I successfully developed responsive clones of Facebook's
+                    home page and profile page. The primary areas of focus were
+                    implementing flex design, ensuring responsiveness across
+                    different devices, and maintaining well-organized code
+                    structure.
+                  </p>
+                  <!-- <p>Developed responsive clones of Facebook home page and profile page utilizing HTML, CSS, and JavaScript. </p> -->
+                </div>
+                <div class="click-icons">
+                  <a href="Clone Projects/Socialbook/index.html" target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/video-streaming.png" />
+                <div class="work-description">
+                  <h3>Youtube Web App</h3>
+                  <p>
+                    Created responsive clone of YouTube home page and enhanced
+                    it by implementing an interactive video playback page.
+                    Through this project, I gained a deeper understanding of
+                    essential features such as video players and commenting
+                    systems and grid layout.
+                  </p>
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="Clone Projects/Youtube-clone/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/airbnb.jpg" />
+                <div class="work-description">
+                  <h3>Airbnb Web App</h3>
+                  <p>
+                    Developed responsive clones of Airbnb's home pages, covering
+                    popular destinations, property listings, and online
+                    packages. This project allowed me to explore the effective
+                    use of grid and flex layout combinations, ensuring the
+                    responsive display of images.
+                  </p>
+                  <!-- <p>Developed responsive clones of various Airbnb home pages including popular destinations, property listings, and online packages using HTML, CSS and JavaScript.</p> -->
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="Clone Projects/Airbnb-clone/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/social-media_2.jpg" />
+                <div class="work-description">
+                  <h3>LinkedIn Web App</h3>
+                  <p>
+                    Another web app LinkedIn is cloned further strengthened my
+                    skills in responsive design, allowing me to create a
+                    seamless user experience across various devices. I gained
+                    hands-on experience in implementing responsive layouts and
+                    optimizing the design for different screen sizes.
+                  </p>
+                  <!-- <p>Developed responsive clones LinkedIn home page and profile page utilizing HTML, CSS, and JavaScript to ensure a seamless user experience across different devices</p> -->
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="Clone Projects/LinkedIn-website clone/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="images/video-streaming_2.png" />
+                <div class="work-description">
+                  <h3>Netflix Web App</h3>
+                  <p>
+                    I successfully created a responsive clone of the Netflix
+                    home page which enhance my skills in creating visually
+                    appealing web pages while maintaining simplicity and
+                    effectiveness. Additionally, I implemented an accordion
+                    feature in the FAQ section, providing an interactive and
+                    user-friendly experience for navigating through frequently
+                    asked questions.
+                  </p>
+                  <!-- <p>Created responsive clone Netflix home pages utilizing HTML, CSS, and JavaScript.</p> -->
+                </div>
+                <div class="click-icons">
+                  <a
+                    href="Clone Projects/Netfilx-clone/index.html"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i
+                  ></a>
+                  <a
+                    href="https://github.com/Bhargav-j/Bhargav-Jeereddy.github.io/tree/main/Clone%20Projects"
+                    target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="btn in-project-btn">See All</a>
+        </div>
+
+        <!-- <div class="work-list">
                 <div class="work">
                     <img src="images/social-media.jpg">
                     <div class="work-description">
@@ -495,9 +980,9 @@
                     </div>
                 </div>
             </div> -->
-            
-            <!-- hidden by default and visibile on show button click -->
-            <!-- <div class="work-list">
+
+        <!-- hidden by default and visibile on show button click -->
+        <!-- <div class="work-list">
                 <div class="work">
                     <img src="images/social-media_2.jpg">
                     <div class="work-description">
@@ -525,43 +1010,68 @@
                 </div>
             </div> -->
 
-            <!-- <a class="btn" id="showmore">See More</a> -->
-        </div>
+        <!-- <a class="btn" id="showmore">See More</a> -->
+      </div>
     </div>
 
-    <div id="contact" class = "segment">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                        <a href="https://twitter.com/Bhargav_theBoss" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://github.com/Bhargav-j" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <a href="images/Jeereddy_Bhargav_Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <input type="text" name = "Date" id="datetime-input">
-                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                        <span id="msg"></span>
-                    </form>
-                </div>
+    <div id="contact" class="segment">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i> jeereddybhargav.iith@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> +91-8919471367</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/jeereddy-bhargav-1b08588b"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+              <a href="https://twitter.com/Bhargav_theBoss" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://github.com/Bhargav-j" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
+            <a
+              href="images/Jeereddy_Bhargav_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <input type="text" name="Date" id="datetime-input" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              <span id="msg"></span>
+            </form>
+          </div>
         </div>
+      </div>
 
-        <div class="copyright">
-            <p>Copyright &copy; Bhargav Jeereddy <i class="fas fa-heart"></i></p>
-        </div>
+      <div class="copyright">
+        <p>Copyright &copy; Bhargav Jeereddy</p>  
+        <!-- <i class="fas fa-heart"></i> -->
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
