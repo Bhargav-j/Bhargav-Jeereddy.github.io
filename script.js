@@ -116,7 +116,7 @@ function changeTheme(){
         document.documentElement.style.setProperty('--fc', '#080808');
         document.documentElement.style.setProperty('--about-font', '#161414');
         document.documentElement.style.setProperty('--services-bg', '#e3e2e2');
-        document.documentElement.style.setProperty('--projects-bg', '#232121');
+        document.documentElement.style.setProperty('--projects-bg', '#ababab');
     } else {
         document.documentElement.style.setProperty('--bg', '#080808');
         document.documentElement.style.setProperty('--fc', '#fff');
